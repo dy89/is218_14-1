@@ -1,8 +1,12 @@
 <?php
 class Product {
-    private $category, $id, $code, $name, $price;
+    private $category = NULL;
+    private $id = NULL;
+    private $code = NULL; 
+    private $name = NULL; 
+    private $price = NULL;
 
-    public function __construct($category, $code, $name, $price) {
+    public function __construct() {
         $this->category = $category;
         $this->code = $code;
         $this->name = $name;
@@ -13,32 +17,32 @@ class Product {
         return $this->category;
     }
 
-    public function setCategory($value) {
-        $this->category = $value;
+    public function setCategory() {
+        $this->category = $category;
     }
 
     public function getID() {
         return $this->id;
     }
 
-    public function setID($value) {
-        $this->id = $value;
+    public function setID() {
+        $this->id = $id;
     }
 
     public function getCode() {
         return $this->code;
     }
 
-    public function setCode($value) {
-        $this->code = $value;
+    public function setCode() {
+        $this->code = $code;
     }
 
     public function getName() {
         return $this->name;
     }
 
-    public function setName($value) {
-        $this->name = $value;
+    public function setName() {
+        $this->name = $name;
     }
 
     public function getPrice() {
@@ -50,8 +54,8 @@ class Product {
         return $formatted_price;
     }
 
-    public function setPrice($value) {
-        $this->price = $value;
+    public function setPrice() {
+        $this->price = $price;
     }
 
     public function getDiscountPercent() {

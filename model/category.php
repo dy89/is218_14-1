@@ -1,9 +1,11 @@
 <?php
 class Category {
-    private $id;
-    private $name;
 
-    public function __construct($id, $name) {
+    private $id = NULL;
+    private $name = NULL;
+    private $value = NULL;
+
+    public function __construct() {
         $this->id = $id;
         $this->name = $name;
     }
@@ -12,7 +14,7 @@ class Category {
         return $this->id;
     }
 
-    public function setID($value) {
+    public function setID() {
         $this->id = $value;
     }
 
@@ -20,7 +22,7 @@ class Category {
         return $this->name;
     }
 
-    public function setName($value) {
+    public function setName() {
         $this->name = $value;
     }
 }
