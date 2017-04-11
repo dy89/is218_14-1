@@ -1,10 +1,10 @@
 <?php
 class Product {
-    private $category = NULL;
-    private $id = NULL;
-    private $code = NULL; 
-    private $name = NULL; 
-    private $price = NULL;
+    public $category = NULL;
+    public $id = NULL;
+    public $code = NULL; 
+    public $name = NULL; 
+    public $price = NULL;
 
     public function __construct() {
         $this->category = $category;

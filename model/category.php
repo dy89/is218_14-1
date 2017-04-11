@@ -1,9 +1,9 @@
 <?php
 class Category {
 
-    private $id = NULL;
-    private $name = NULL;
-    private $value = NULL;
+    public $id = NULL;
+    public $name = NULL;
+    public $value = NULL;
 
     public function __construct() {
         $this->id = $id;
