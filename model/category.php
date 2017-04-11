@@ -15,7 +15,7 @@ class Category {
     }
 
     public function setID() {
-        $this->id = $value;
+        $this->id = $id;
     }
 
     public function getName() {
@@ -23,7 +23,7 @@ class Category {
     }
 
     public function setName() {
-        $this->name = $value;
+        $this->name = $name;
     }
 }
 ?>
