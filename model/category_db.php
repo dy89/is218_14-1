@@ -17,7 +17,7 @@ class CategoryDB {
         return $categories;
     }
 
-    public function getCategory($category_id) {
+    public function getCategory() {
         $db = Database::getDB();
         $query = 'SELECT * FROM categories
                   WHERE categoryID = :category_id';    
