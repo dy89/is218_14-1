@@ -1,28 +1,28 @@
 <?php
 class Category {
 
-    private $id = NULL;
-    private $name = NULL;
+    private $id;
+    private $name;
 
     public function __construct() {
-        $this->id = $id;
-        $this->name = $name;
+        $this->id = NULL;
+        $this->name = NULL;
     }
 
     public function getID() {
         return $this->id;
     }
 
-    public function setID() {
-        $id = $this->id;
+    public function setID($value) {
+        $this->id = $value;
     }
 
     public function getName() {
         return $this->name;
     }
 
-    public function setName() {
-        $name = $this->name; 
+    public function setName($value) {
+        $this->name = $value;
     }
 }
 ?>
