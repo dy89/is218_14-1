@@ -18,7 +18,7 @@ class Product {
     }
 
     public function setCategory() {
-        $this->category = $category;
+        $category = $this->category;
     }
 
     public function getID() {
@@ -26,7 +26,7 @@ class Product {
     }
 
     public function setID() {
-        $this->id = $id;
+        $id = $this->id;
     }
 
     public function getCode() {
@@ -34,7 +34,7 @@ class Product {
     }
 
     public function setCode() {
-        $this->code = $code;
+        $code = $this->code;
     }
 
     public function getName() {
@@ -42,7 +42,7 @@ class Product {
     }
 
     public function setName() {
-        $this->name = $name;
+        $name = $this->name;
     }
 
     public function getPrice() {
@@ -55,7 +55,7 @@ class Product {
     }
 
     public function setPrice() {
-        $this->price = $price;
+        $price = $this->price;
     }
 
     public function getDiscountPercent() {
