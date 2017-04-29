@@ -1,5 +1,8 @@
 <?php
 class CategoryDB {
+    public function __construct() {
+        
+    }
     public function getCategories() {
         $db = Database::getDB();
         $query = 'SELECT * FROM categories

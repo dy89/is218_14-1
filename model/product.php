@@ -7,6 +7,7 @@ class Product {
         $this->code = NULL;
         $this->name = NULL;
         $this->price = NULL;
+        $this->id = NULL;
     }
 
     public function getCategory() {
