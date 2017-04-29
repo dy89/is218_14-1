@@ -20,22 +20,22 @@ if ($action == 'list_products') {
         $category_id = 1;
     }
 
-    $current_category = new CategoryDB();
-    $current_category->getCategory($category_id);
-    $categories = new CategoryDB();
-    $categories->getCategories();
-    $products = new ProductDB();
-    $products->getProductsByCategory($category_id);
+    $currentdb = new CategoryDB();
+    $current_category = $currentdb->getCategory($category_id);
+    $categoriesdb = new CategoryDB();
+    $categories = $categoriesdb->getCategories();
+    $productsdb = new ProductDB();
+    $products = $productsdb->getProductsByCategory($category_id);
 
     include('product_list.php');
 } else if ($action == 'view_product') {
-    $categories = new CategoryDB();
-    $categories->getCategories();
+    $categoriesdb = new CategoryDB();
+    $categories = $categoriesdb->getCategories();
 
     $product_id = filter_input(INPUT_GET, 'product_id', 
             FILTER_VALIDATE_INT);   
-    $product = newProductDB();
-    $product->getProduct($product_id);
+    $productdb = new ProductDB();
+    $product = $productdb->getProduct($product_id);
 
     include('product_view.php');
 }
