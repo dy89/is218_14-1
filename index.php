@@ -1,4 +1,5 @@
 <?php include 'view/header.php'; ?>
+<link rel="stylesheet" href="main.css" />
 <main>
     <h1>Menu</h1>
     <ul>
